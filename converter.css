@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: auto;
+    margin-top: 70px;
+    background: #333;
+    color: #333;
+}
+#container{
+    margin: auto;
+    max-width: 20em;
+    height: auto;
+    background: #fff;
+    border: 1px solid #fff;
+}
+h1{
+    text-align: center;
+}
+input{
+    margin: 5px;
+    width: 19em;
+    height: 2em;
+}
+.out{
+    margin: 5px;
+    padding: 5px;
+    background: #ddd;
+}
+#Grams{
+    background-color: blue;
+    color: #fff;
+}
+#Kilograms{
+    background-color: rgb(35, 241, 53);
+    color: #fff;
+}
+#Ounces{
+    background-color: rgb(245, 16, 16);
+    color: #fff;
+}
+div > #Output{
+    margin: 5px auto;
+    padding: 5px;
+}

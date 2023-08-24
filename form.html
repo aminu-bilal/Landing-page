@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buz@pp</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <span id="header">
+        Timart Application Site
+    </span>
+    <section>
+        <form action="" id="my_form" >
+            <h1>Application Form</h1>
+            <div class="msg"></div>
+            <div id="Fname">
+                <label for="Fname">First name</label><br>
+                <input type="text" id="Firstname" placeholder="first name">
+            </div>
+            <div>
+                <label for="Lname">Last name</label><br>
+                <input type="text" id="Lastname" placeholder="last name">
+            </div>
+            <div>
+                <label for="Mail">Email</label><br>
+                <input type="text" id="Mail" placeholder="moonwater@gmail.com">
+            </div>
+            <div>
+                <label for="Position">Position</label><br>
+                <input type="text" id="Position" placeholder="developer">
+            </div>
+            <div>
+                <label for="Exprience">Year's of Exprience</label><br>
+                <input type="number" id="Exprience" placeholder="0">
+            </div>
+            <div class="check">
+                <label for="nature">Work Type</label><br>
+                <input type="checkbox" class="worktype" name="work_type" value="worktype">Remote<br>
+                <input type="checkbox" class="worktype" name="work_type" value="worktype">NO Remote<br>
+            </div>
+            <div class="check">
+                <label for="gender">Gender</label><br>
+                <input type="checkbox" class="gender" name="Gender" value="Male">Male<br>
+                <input type="checkbox" class="gender" name="Gender" value="Female">Female<br>
+                <input type="checkbox" class="gender" name="Gender" value="Binary">Binary<br>
+            </div>
+            <div>
+                <label for="DOB">DOB</label><br>
+                <input type="date" id="DOB">
+            </div>
+            <div>
+                <label for="Address">Address</label><br>
+                <input type="text" id="Address">
+            </div>
+            <br>
+            <button class="btn" onclick="BTN" >Submite</button>
+            <p id="pass"></p>            
+        </form><br>
+        <ul id="user"></ul>
+        <!-- <ul class="item">
+            <li class="item">item 1</li><br>
+            <li class="item">item 2</li><br>
+            <li class="item">item 3</li><br>
+            <li class="item">item 4</li><br>
+            <li class="item">item 5</li><br>
+        </ul> -->
+    </section>
+
+    <script src="form.js"></script> 
+</body>
+</html> 
