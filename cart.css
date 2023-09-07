@@ -22,9 +22,15 @@ body{
     font-size: 15px;
     font-weight: 600px;
     background-color: #fff;
+    color: blue;
+    border: 1px solid blue;
+}
+input{
+    border: 1px solid blue;
 }
 a{
     text-decoration: none;
+    color: blue;
 }
 #cart{
     margin: auto;
@@ -44,19 +50,20 @@ a{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    row-gap: 2em;
-    column-gap: 2em;
+    row-gap: 1.5em;
+    column-gap: 1.5em;
 }
 .items{
-    height: auto;
+    height: 283px;
     width: 202px;
     border: 1px solid rgb(255, 248, 248);
-    margin: 2em;
+    margin: 1.5em;
     padding: 0.9em;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     font-size: 1.5em;
     transition: box-shadow 150ms;
+    color: blue;
 }
 .items:hover{
     transition-delay: 200ms;
@@ -75,6 +82,10 @@ a{
     font-size: 1em;
     margin: auto;
 }
+.btn:hover{
+    color: rgb(34, 162, 247);
+    border-color: rgb(34, 162, 247);
+}
 .items:hover{
     background: rgb(255, 255, 255);
 }    
@@ -82,11 +93,17 @@ input{
     width: 18em;
     height: 2em;
 }
+#MainCart{
+    border: none;
+    background: none;
+    font-size: 1.2em;
+    color: blue;
+}
 #cart-modal{
     display: none;
     width: 98vw;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     background: rgba(0, 0, 0, 0.6);
 }
@@ -119,25 +136,34 @@ input{
     justify-content: space-between;
 }
 .add-btn, .sub-btn{
+    text-align: center;
     font-size: 14px;
     width: 1em;
     /* height: 1em; */
-    border: 1px solid #1d1d1d;
+    border: 1px solid #ff0000;
+    background: #ff0000;
+    color: #fff;
 }
 .cart-container-modal > #header_div > h1{
     font-size: 2em;
     padding: 0.5em;
+    color: blue;
 }
 .Closebtn{
     align-self: flex-start;
     margin: 1em;
     padding: 0.9em;
-    background: rgba(255, 0, 0, 0.8);
-    color: #fff;
+    background: rgba(255, 255, 255, 0.8);
+    color: #ff0000;
     border: 1px solid #fff;
     width: auto;
     height: auto;
-}
+    }
+    .Closebtn:hover{
+        background: rgba(255, 0, 0, 0.8);
+        color: #fff;
+        border-radius: 10px;
+    }
 #header_div{
     display: flex;
     flex-direction: row;
@@ -145,14 +171,14 @@ input{
 }
 .Total-div{
     display: flex;
+    margin: 1px;
 }
 #Checkout_div{
-    margin: 1em;
+    margin: 0.5em;
 }
-#Total-total{
+.Total-total{
     display: flex;
     justify-content: space-between;
-    padding: 1em;
 }
 #Checkout_btn{
     width: 100%;
@@ -164,4 +190,9 @@ input{
 #Added_item_Box{
     overflow-x: hidden;
     overflow-y: scroll;
+    height:90vh;
+}
+.price-div > .add-sub, .Total-div{
+    margin: 3px;
+    padding: 2px;
 }

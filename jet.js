@@ -19,7 +19,19 @@ const Age = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64,32];
 // forEach
 companies.forEach(function(name) {
     console.log(name);
+
 })
+
+console.log("hello")
+
+const logCompanyName = ()=>{
+    console.log("hellos")
+return companies.forEach((name)=> {
+    console.log(name);
+})
+}
+
+console.log(logCompanyName())
 // filter
 // map
 // sort

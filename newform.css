@@ -13,7 +13,7 @@ header > h1{
     color: lightsalmon;
     font-size: 30px;
     font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 form{
     max-width: 500px;
@@ -50,8 +50,10 @@ input:hover{
     box-shadow: 1px 1px 3px orangered,
 }
 #submit{
+    margin: auto;
     color: orangered;
     text-align: center;
+    justify-content: center;
     width: 50%;
     height: 30px;
     font-family: poppins;
@@ -59,11 +61,11 @@ input:hover{
     font-size: 24px;
 }
 li{
-    margin: auto;
+    margin: 5px auto;
     list-style: none;
     border: 1px solid orangered;
     border: 30px 18px 30px 18px;
-    width: 50%;
+    width: 40%;
     padding: 10px 10px 10px 10px;
     
 }

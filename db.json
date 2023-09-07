@@ -3,61 +3,61 @@
         {
             "id": 1,
             "name": "Ronaldo",
-            "price": "#1050.00",
+            "price": 1050,
             "image": "IMG_20230120_113922.jpg"
         },
         {
             "id": 2,
             "name": "Messi",
-            "price": "#1000.00",
+            "price": 1000,
             "image": "IMG_20230120_113936.jpg"
         },
         {
             "id": 3,
             "name": "Bale",
-            "price": "#600.00",
+            "price": 600,
             "image": "IMG_20230120_113945.jpg"
         },
         {
             "id": 4,
             "name": "Ramos",
-            "price": "#500.00",
+            "price": 500,
             "image": "IMG_20230120_113951.jpg"
         },
         {
             "id": 5,
             "name": "Neymar",
-            "price": "#850.00",
+            "price": 850,
             "image": "IMG_20230120_113959.jpg"
         },
         {
             "id": 6,
             "name": "Gavi",
-            "price": "#880.00",
+            "price": 880,
             "image": "IMG_20230120_114005.jpg"
         },
         {
             "id": 7,
             "name": "Haaland",
-            "price": "#1100.00",
+            "price": 1100,
             "image": "IMG_20230120_114012.jpg"
         },
         {
             "id": 8,
             "name": "Lewis",
-            "price": "#910.00",
+            "price": 910,
             "image": "IMG_20230120_114019.jpg"
         },
         {
             "id": 9,
             "name": "Mane",
-            "price": "#890.00",
+            "price": 890,
             "image": "IMG_20230120_114028.jpg"
         },
         {
             "id": 10,
             "name": "Mbappe",
-            "price": "#1150.00",
+            "price": 1150,
             "image": "IMG_20230120_114036.jpg"
         }
     ]
