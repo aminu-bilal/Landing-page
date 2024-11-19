@@ -11,28 +11,48 @@ const companies=[
     {name:'Tea shop', category: 'Technology', start: 1981, end: 1989},
     {name:'Golden Age', category: 'Retail', start: 1981, end: 2003},
 ];
-const Age = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64,32];
+const age = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
+const Home = document.querySelectorAll('#home');
 
 // for(let i = 0; i < companies.length; i++) {
 //     console.log(companies[i]);
 // }
+
 // forEach
-companies.forEach(function(name) {
-    console.log(name);
 
-})
+// companies.forEach(function(name) {
+//     console.log(name);
+// })
 
-console.log("hello")
+// const logCompanyName = ()=>{
+// return companies.forEach((name)=> {
+//     console.log(name);
+// });
 
-const logCompanyName = ()=>{
-    console.log("hellos")
-return companies.forEach((name)=> {
-    console.log(name);
-})
-}
+// let canDrink = [];
+// for(let i = 0; i < age.length; i++) {
+//     if(age[i] >= 50) {
+//         canDrink.push(age[i]);
+//     }
+// }
 
-console.log(logCompanyName())
 // filter
+
+// const canDrink = age.filter(function(age){
+//     if(age >= 30){
+//         return true;
+//     }
+// });
+
+// const canDrink = age.filter(age => age >= 30);
+
+const auto = companies.filter(function(name){
+    if (name.category ==='Auto') {
+        return true;
+    }
+})
+
+console.log(auto);
 // map
 // sort
 // reduce

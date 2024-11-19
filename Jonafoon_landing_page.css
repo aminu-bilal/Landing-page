@@ -1,10 +1,361 @@
 *{
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }
 a{
-    text-decoration: none;
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 
+}
+.jonafoon_logo{
+  padding: 0em 0em 1em 3em;
+  width: 200px;
+  height: 70px;
+  flex-shrink: 0;
+}
+header{
+  display: flex;
+  width: 100% 100%;
+  justify-content: space-between;
+  text-align: center;
+  margin: auto;
+  padding: 12px;
+  height: 70px;
+}  
+header > ul  {
+  display: flex;
+  align-items: center;
+}
+li{
+  display: inline-flex;
+  margin: 14px 15px;
+  padding: 10px;
+  justify-items: center;
+} 
+header #menu_icon{
+  width: 40px;
+  height: 24.756px;
+  flex-shrink: 0;
+}
+#first_container{
+  display: flex;
+  background-image: url(unsplash_top.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  max-width: 100%;
+  flex-direction: column;
+  padding: 9em 0 3em 9em;
+  gap: 3em;
+}
+.first_h1{
+  width: 55%;
+  color: #ffffff;
+  font-size: 64px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700px;
+  line-height: 100px;
+}
+.first_p{
+  width: 48%;
+  color: #FFF;
+  font-size: 26px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+}
+#first_container_button{
+  display: inline-flex;
+  gap: 3em;
+}
+.our_services{
+  text-align: center;
+  width: 160px;
+  background-color: #0083C4;
+  border: 1px solid #0083C4;
+  margin: 0em;
+  border-radius: 20px;
+  padding: 9px;
+  color: #FFF;
+  font-size: 24px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px;
+}
+.recent_projects{
+  width: 195px;
+  border: 1px solid #F9F9F9;
+  margin: 0em;
+  border-radius: 20px;
+  padding: 9px;
+  color: #000;
+  font-size: 24px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px;
+}
+.Our_Recent_Works_container{
+  background-color: #F9F9F9;
+}
+h2{
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  color: #0093DD;
+  text-align: center;
+  font-size: 40px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 73px;
+}
+.Our_Recent_Works_paragraph{
+  width: 670px;
+  margin: auto;
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+}
+.project_container{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  gap: 1em;
+  margin: 0em 0em 0em 2em;
+  padding: 1em 1em 5em 3em;
+  justify-items: center;
+  text-align: center;
+}
+.Project_paragraph{
+  text-align: justify;
+  justify-items: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  color: #000000;
+  width: 200px;
+  margin: auto;
+}
+.project_button{
+  border: 1px solid #0083C4;
+  color: #0083C4;
+  padding: 10px;
+  background: #F9F9F9;
+  text-align: center;
+  margin: auto;
+  border-radius: 20px;
+  background: rgba(196, 196, 196, 0.00);
+}
+h4{
+  text-align: center;
+  color: #0093DD;
+  text-align: center;
+  font-size: 40px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 73px;
+}
+.h4_paragraph{
+  width: 50%;
+  margin: auto;
+  color: #000;
+  text-align: center;
+  font-size: 30px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
+}
+.h4_button{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.h4_button button{
+  border: 1px solid #0083C4;
+  border-radius: 20px;
+  background-color: #0083C4;
+  margin: auto;
+  padding: 10px;
+  width: 20%;
+  color: #FFF;
+  text-align: center;
+  font-size: 36px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px;
+}
+h5{
+  color: #0093DD;
+  text-align: center;
+  font-size: 40px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 73px;
+}
+.h5_paragraph{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+  color: #000;
+  text-align: center;
+  font-size: 36px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
+}
+.h5_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 90px;
+}
+.h5_container h6{
+  padding-left: 20px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 36px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 73px;
+}
+.h5_container p{
+  justify-content: center;
+  flex-shrink: 0;
+  width: 457px;
+  padding-left: 20px;
+  margin: auto;
+  color: #ffffff;
+  text-align: left;
+  font-size: 24px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
+}
+.Construction_and_Repairs_container{
+  width: auto;
+  background-color: #0093DD;
+}
+.Information_Technology_container{
+  text-align: center;
+  width: auto;
+  background-color: #0093DD;
+}
+.footer{
+  background-image: url(unsplash_foot.png);
+  background-size: cover;
+  width: 100% 100%;
+  height: 100%;
+  display: flex;
+}
+.footer #follow_us_container #Quick_link_container #Contact_container #Office_container{
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+}
+.footer h1{
+  margin-top: 80px;
+  color: #0083C4;
+}
+.footer #follow_us_container{
+  justify-items: center;
+  width: 25%;
+  margin-left: 10px;
+  color: #0083C4;
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+}
+.icon{
+  height: 40px;
+  width: 40px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+  color: white;
+}
+.footer #Quick_link_container{
+  width: 25%;
+}
+.footer #Quick_link_container a{
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 73px;
+}
+.footer #Contact_container{
+  width: 25%;
+}
+.footer #Contact_container p{
+  width: 80%;
+  margin: 0px;
+  padding: 0px;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+}
+.footer #Office_container{
+  width: 25%;
+}
+.footer #Office_container p{
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px;
+}
+#Copyright{
+  height: 38.426px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 20px;
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
 }
 @media screen and (max-width: 600px) {
     *{
@@ -268,6 +619,12 @@ a{
       .Construction_and_Repairs_container{
         width: auto;
         background-color: #0093DD;
+      }
+      .Construction_and_Repairs_container > h6{
+        text-align: center;
+      }
+      .Information_Technology_container > h6{
+        text-align: center;
       }
       .Information_Technology_container{
         text-align: center;

@@ -59,6 +59,24 @@
             "name": "Mbappe",
             "price": 1150,
             "image": "IMG_20230120_114036.jpg"
+        },
+        {
+            "id": 11,
+            "name": "Ibrahim",
+            "price": 1000,
+            "image": "IMG_20231005_203157.jpg"
+        },
+        {
+            "id": 12,
+            "name": "Pele",
+            "price": 1000,
+            "image": "IMG_20231005_203212.jpg"
+        },
+        {
+            "id": 13,
+            "name": "Maradona",
+            "price": 1000,
+            "image": "IMG_20231005_203625.jpg"
         }
     ]
 }

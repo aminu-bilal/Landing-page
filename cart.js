@@ -2,19 +2,19 @@
 const SEARCH = document.getElementById('filtersearch');
 const Container = document.querySelector(".items_container")
 const cartModal = document.querySelector(".cartModal")
-function Filteritems(){
+function Filteritems() {
     const SEARCHvalue = document.getElementById('filtersearch').value.toUpperCase();
     const Cart = document.querySelector('.items_container');
     const Items = Cart.querySelectorAll('div.items');
-    for(i = 0; i < Items.length;i++){
+    for (i = 0; i < Items.length; i++) {
         let p = Cart[i].getElementByTagName('p')[0];
-        if(p.innerHTML.toUpperCase().indexOf(SEARCHvalue) > -1){
-            Cart[i].style.display = ''; 
+        if (p.innerHTML.toUpperCase().indexOf(SEARCHvalue) > -1) {
+            Cart[i].style.display = '';
         } else {
             Cart[i].style.display = 'none';
         }
     }
-}; 
+};
 SEARCH.addEventListener('keyup', Filteritems);
 
 // Function that fetch product from json file using async and await
@@ -35,7 +35,7 @@ const generateCartNode = () => {
 
 
 // Creating a defunction, calling element and creating element 
-const createCartNode = ({name, price, image, id}) => {
+const createCartNode = ({ name, price, image, id }) => {
     // const cartBoxContainer = document.getElementsByClassName('.items_container');
     const cartBox = document.createElement("div");
     cartBox.classList.add("items");
@@ -73,10 +73,10 @@ CheckOutBTN.addEventListener('click', ClearCart);
 let cartItems = []
 
 const addingToCart = async (id) => {
-const PRODUCTS = await getAllProducts()
+    const PRODUCTS = await getAllProducts()
     const product = PRODUCTS.items.find((product) => product.id === id)
     const existingItem = cartItems.find((cartitem) => cartitem.id === product.id)
-    if (!existingItem){
+    if (!existingItem) {
         const newObject = { ...product, priceQuantity: 1, totalValue: product.price }
         cartItems.push(newObject)
     } else {
@@ -104,11 +104,11 @@ const checkoutTotal = () => {
     });
 
     SubTotal.innerText = PreTotal;
-    OverAllTotal.innerText =  Number(PreTotal) + Number(serviceCharge);
+    OverAllTotal.innerText = Number(PreTotal) + Number(serviceCharge);
 }
 
 // Creating cart item card
-const createCartAddedItmes = ({name, price, image, totalValue, priceQuantity}) => {
+const createCartAddedItmes = ({ name, price, image, totalValue, priceQuantity }) => {
     const AddedItemBoxInContainer = document.createElement('div');
     AddedItemBoxInContainer.classList.add('Added_item');
     const CartImageNamePriceDIv = document.createElement('div')
@@ -148,8 +148,8 @@ const createCartAddedItmes = ({name, price, image, totalValue, priceQuantity}) =
     TotalValue.innerText = totalValue;
     TotalDiv.appendChild(TotalItem);
     TotalDiv.appendChild(TotalValue);
-    
-    
+
+
     return AddedItemBoxInContainer;
 }
 
@@ -158,21 +158,21 @@ const CartModal = document.getElementById('MainCart')
 const CartModalContainer = document.getElementById('cart-modal');
 // Function that display the cart modal
 const displayModal = () => {
-    CartModalContainer.style.display ='block';
+    CartModalContainer.style.display = 'block';
 }
 // Function that close cart modal
 const CloseModal = (e) => {
     if (e.target.id === "cart-modal" || e.target.id === "close-btn") {
-        CartModalContainer.style.display ='none';
+        CartModalContainer.style.display = 'none';
     }
-} 
+}
 // Adding event listener to the cart to activite the functions above
 CartModal.addEventListener('click', displayModal);
 CartModalContainer.addEventListener('click', CloseModal);
 
 // Function that generate the product to the cart modal 
 const generateNode = async () => {
-const PRODUCTS = await getAllProducts()
+    const PRODUCTS = await getAllProducts()
     PRODUCTS.items.map(item => {
         const cartItem = createCartNode(item)
         Container.appendChild(cartItem)
